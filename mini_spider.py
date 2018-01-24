@@ -77,7 +77,6 @@ def main():
         thread = craw_thread.CrawThread(URLqueue)
         thread.start()
     URLqueue.join()
-    print("Over")
 
     logger.info("Shutting down Mini-spider.\n")
 
